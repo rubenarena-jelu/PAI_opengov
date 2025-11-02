@@ -1,0 +1,64 @@
+/* JELU global overrides for PAI_opengov  */
+
+:root {
+  --brand-bg: #0A1E33;  /* deep navy */
+  --accent-bg: #D2AF6B; /* muted gold */
+  --brand-text: #ffffff;
+  --body-text: #0A1E33;
+}
+
+/* generic site header/nav/footer background cleanup */
+#header,
+#navigation,
+.site-header,
+.navbar,
+.site-footer,
+footer {
+  background-color: var(--brand-bg) !important;
+  color: var(--brand-text) !important;
+}
+
+/* links, primary buttons, selected nav items */
+a,
+a:visited,
+.btn-primary,
+.button.primary,
+.pagination .active a {
+  background-color: var(--brand-bg) !important;
+  border-color: var(--brand-bg) !important;
+  color: var(--brand-text) !important;
+}
+a:hover,
+.btn-primary:hover,
+.button.primary:hover {
+  filter: brightness(1.08);
+}
+
+/* gold highlight elements */
+.badge,
+.label,
+.tag,
+.chip,
+.highlight,
+.notice {
+  background-color: var(--accent-bg) !important;
+  border-color: var(--accent-bg) !important;
+  color: #1b1b1b !important;
+}
+
+/* make sure body text uses our dark navy instead of random grays */
+body,
+#content-wrapper,
+.content,
+.main-content,
+.page,
+.text,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--body-text) !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", system-ui, sans-serif;
+}
